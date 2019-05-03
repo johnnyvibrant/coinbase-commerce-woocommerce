@@ -91,7 +91,7 @@ class WC_Gateway_Coinbase extends WC_Payment_Gateway {
 
 		$image_path = plugin_dir_path( __FILE__ ) . 'assets/images';
 		$icon_html  = '';
-		$methods    = get_option( 'coinbase_payment_methods', array( 'bitcoin', 'bitcoincash', 'ethereum', 'litecoin' ) );
+		$methods    = get_option( 'coinbase_payment_methods', array( 'ethereum', 'bitcoin', 'litecoin', 'bitcoincash', 'usdc' ) );
 
 		// Load icon for each available payment method.
 		foreach ( $methods as $m ) {
